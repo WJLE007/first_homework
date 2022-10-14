@@ -10,7 +10,7 @@ public class jdbc {
         String url="jdbc:mysql://localhost:3306/atguigu?serverTimezone=UTC";
         Connection con= null;
         try {
-            con = DriverManager.getConnection(url,"root","Ll5211314" );
+            con = DriverManager.getConnection(url,"root","123123" );
         } catch (SQLException e) {
             e.printStackTrace();
         }
