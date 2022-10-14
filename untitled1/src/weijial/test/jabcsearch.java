@@ -11,7 +11,7 @@ public class jabcsearch {
     public static void foodsearch(){
         String url="jdbc:mysql://localhost:3306/first_work?serverTimezone=UTC";
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123123" );
             String sql="select * from food";
             PreparedStatement pre = con.prepareStatement(sql);
             ResultSet resultSet = pre.executeQuery();
@@ -32,7 +32,7 @@ public class jabcsearch {
     public static void usersearch(){
         String url="jdbc:mysql://localhost:3306/first_work?serverTimezone=UTC";
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123123" );
             String sql="select * from user";
             PreparedStatement pre = con.prepareStatement(sql);
             ResultSet resultSet = pre.executeQuery();
@@ -58,7 +58,7 @@ public class jabcsearch {
         System.out.println("所在楼层");
         int floor=input.nextInt();
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123123https://github.com/WJLE007/first_homework" );
             String sql="select * from food where canteen=? and floor=?";
             PreparedStatement pre = con.prepareStatement(sql);
             pre.setObject(1,canteen);
@@ -86,7 +86,7 @@ public class jabcsearch {
 //        System.out.println("所在楼层");
 //        int floor=input.nextInt();
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123123" );
             String sql="select * from food ";
             PreparedStatement pre = con.prepareStatement(sql);
             ResultSet resultSet = pre.executeQuery();
