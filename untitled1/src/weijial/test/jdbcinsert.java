@@ -27,7 +27,7 @@ public static void foodinsert(){
     int  password=input.nextInt();
 
     try {
-        Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+        Connection con = DriverManager.getConnection(url,"root","123123" );
         String sql="insert into food(name ,canteen,floor) values (?,?,?)";
 
         PreparedStatement pre = con.prepareStatement(sql);
@@ -55,7 +55,7 @@ public static void foodinsert(){
         String password=input.next();
 
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123213" );
             String sql="insert into user(username,email,password) values (?,?,MD5(?))";
 
             PreparedStatement pre = con.prepareStatement(sql);
@@ -81,7 +81,7 @@ public static void foodinsert(){
         int  password=input.nextInt();
 
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123123" );
             String sql="insert into save(canteen,floor) values (?,?)";
 
             PreparedStatement pre = con.prepareStatement(sql);
