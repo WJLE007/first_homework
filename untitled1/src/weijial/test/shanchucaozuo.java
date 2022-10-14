@@ -11,7 +11,7 @@ public class shanchucaozuo {
         System.out.println("输入你的用户名称");
         String username=input.next();
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123123" );
             String sql="delete from user where username=?";
             PreparedStatement pre = con.prepareStatement(sql);
             pre.setObject(1,username);
@@ -30,7 +30,7 @@ public class shanchucaozuo {
         System.out.println("输入食物名称");
         String username=input.next();
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","12323" );
             String sql="delete from food where name=?";
             PreparedStatement pre = con.prepareStatement(sql);
             pre.setObject(1,username);
@@ -50,7 +50,7 @@ public class shanchucaozuo {
         System.out.println("输入食物名称");
         int food=input.nextInt();
         try {
-            Connection con = DriverManager.getConnection(url,"root","Ll5211314" );
+            Connection con = DriverManager.getConnection(url,"root","123123" );
             String sql="delete from save where user_id=? and food_id=?";
             PreparedStatement pre = con.prepareStatement(sql);
             pre.setObject(1,userid);
